@@ -1,6 +1,6 @@
-Autômato Finitos em python
+#Autômato Finitos em python
 
-Modo AFD
+#Modo AFD
 
 #N = autômato
 
@@ -11,7 +11,7 @@ estado_inicial = “ “
 Estados_finais = [ ]
 
 
-//Lendo dados do Autômato
+#Lendo dados do Autômato
 
 print (“Informe o conjunto de estados: “: end=“”)
 estados = input ( ).split( )
@@ -38,6 +38,28 @@ For estado in estados:
 		else:
 			func_transicao [(estado, simbolo)] = proximo_estado
 
+
+print ("Informe a linguagem:" end=" ")
+entrada= input()
+
+estado_atual = estado_inicial
+
+for simbolo in entrada:
+	print (f "Estado atual: {estado_atual}")
+	print (f "Entrada atual: {simbolo}")
+
+	
+	#exibindo estado
+	print (f "Próximo estado: {func_transicao[(estado_atual, simbolo)]}")
+
+       #atualizando estado
+	estado_atual = func_transicao[(estado_atual, simbolo)
+
+
+	if estado_atual == None:
+	 print ("O autômato não reconheceu a linguagem")
+	 break
+	
  
 
 
