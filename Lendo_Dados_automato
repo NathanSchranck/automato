@@ -1,0 +1,45 @@
+Autômato Finitos em python
+
+Modo AFD
+
+#N = autômato
+
+estados = [  ]
+alfabeto = [ ]
+func_transicao = { }
+estado_inicial = “ “
+Estados_finais = [ ]
+
+
+//Lendo dados do Autômato
+
+print (“Informe o conjunto de estados: “: end=“”)
+estados = input ( ).split( )
+
+Print(“Informe o alfabeto de entrada:”, end =“”)
+alfabeto= input( ).split( )
+
+Print (“Informe o estado inicial: ”, end=“ “)
+estado_inicial = input( )
+
+Print (“Informe o estado finais: “ end =“”)
+estados_finais = input( ).split( )
+
+
+Print (“Defina as funções de transições: )
+For estado in estados:
+	for simbolo in alfabeto:
+	 	print (f ”\t {simbolo}“
+		print (f “{estado}\t ——->\t  “, end=“ “)
+		proximo_estado = input( )
+		
+		if proximo estado == “.”
+			func_transicao[(estado, simbolo)] = None
+		else:
+			func_transicao [(estado, simbolo)] = proximo_estado
+
+ 
+
+
+
+
